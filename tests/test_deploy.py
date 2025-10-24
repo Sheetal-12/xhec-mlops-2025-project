@@ -3,8 +3,7 @@
 import pytest
 
 prefect = pytest.importorskip(
-    "prefect",
-    reason="Prefect not installed; skipping deployment tests."
+    "prefect", reason="Prefect not installed; skipping deployment tests."
 )
 
 

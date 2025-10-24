@@ -13,6 +13,7 @@ def test_main_calls_pipeline(monkeypatch, sample_csv):
     def fake_preprocess_data(_):
         called["preprocess"] = True
         import pandas as pd
+
         return pd.DataFrame({"rings": [1, 2], "sex_M": [1, 0], "Length": [0.3, 0.4]})
 
     def fake_train_model(_, outdir: Path):

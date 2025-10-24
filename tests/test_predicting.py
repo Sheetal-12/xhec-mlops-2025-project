@@ -26,6 +26,7 @@ def test_predict_on_unseen_data(tmp_path, sample_csv, monkeypatch):
 
     class FakeModel:
         """Mock model returning sequential numeric predictions."""
+
         def predict(self, X):
             calls["predict"] = True
             return np.arange(len(X)) + 0.5
