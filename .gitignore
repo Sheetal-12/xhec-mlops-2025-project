@@ -91,3 +91,4 @@ secrets/*
 *.pkl
 local_objects/
 src/web_service/local_objects/
+data/
