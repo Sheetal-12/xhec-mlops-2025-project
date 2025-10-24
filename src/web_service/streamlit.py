@@ -33,7 +33,9 @@ if st.button("Run Predictions"):
             if response.status_code == 201:
                 # Just display the raw JSON response
                 st.success(" Prediction completed!")
-                st.info("🔍 Click the arrows below to expand and view each batch of predictions.")
+                st.info(
+                    "🔍 Click the arrows below to expand and view each batch of predictions."
+                )
                 st.json(response.json())
             else:
                 st.error(f"API returned {response.status_code}: {response.text}")
