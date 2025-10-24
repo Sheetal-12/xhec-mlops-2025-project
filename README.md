@@ -63,7 +63,7 @@ pre-commit run --all-files
 
 ---
 
-💬 First, verify everything works locally in your environment.  
+💬 First, verify everything works locally in your environment.
 Then, run the same API inside Docker for deployment testing.
 
 
@@ -88,7 +88,7 @@ curl -X POST http://localhost:8080/predict_all
 # 5. Test predictions with streamlit (optional)
 uvicorn src.web_service.main:app --reload --port 8080
 # In a different terminal now, in parallele, run:
-streamlit run src/web_service/streamlit.py 
+streamlit run src/web_service/streamlit.py
 ```
 
 
@@ -335,7 +335,7 @@ print(response.json()["predictions"])
 ```bash
 uvicorn src.web_service.main:app --reload --port 8080
 # In parallele, run in another terminal:
-streamlit run src/web_service/streamlit.py 
+streamlit run src/web_service/streamlit.py
 ```
 
 
